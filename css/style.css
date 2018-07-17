@@ -80,7 +80,9 @@ ul, ol{
 .menu-button-item:nth-child(2){
   top:8px;
 }
-
+.image {
+  width: 100%;
+}
 .folder-link{
   color: #818181;
   text-decoration: none;
@@ -168,7 +170,20 @@ ul, ol{
   }
 }
 }
-
+/* .column-img:after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  left: 0;
+  background: black;
+  bottom: -1px;
+  right: 0px;
+  transition: 0.5s;
+}
+.column-img:hover::after{
+  width: 100%; */
+}
 .button{
   background: none;
   border: none;
@@ -222,6 +237,13 @@ margin: auto;
     transform: translateY(-100%);
     transition: 0.5s;
 
+  }
+  .menu-item{
+    margin-bottom: 30px;
+  }
+
+  .menu-open{
+    transform: translateY(0);
   }
 .footer{
     flex-direction: column;
