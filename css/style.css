@@ -57,6 +57,18 @@ ul, ol{
   color: #818181;
   text-decoration: none;
 }
+.folder-link{
+  color: #818181;
+  text-decoration: none;
+}
+.folder-header{
+  margin-top: 100px;
+
+  font-family: 'Poiret One', cursive;
+  font-size: 30px;
+  color: #818181;
+
+}
 .image {
   width: 100%;
 }
@@ -86,9 +98,9 @@ ul, ol{
   flex-wrap: wrap;
   justify-content: space-between;
 
-  max-width: 3000px;
+  /* max-width: 3000px;
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 10px; */
 }
 
 .column {
@@ -97,10 +109,13 @@ ul, ol{
   flex: 25%;
   padding: 0 10px;
 
+
 }
 .column-img {
   margin-top: 8px;
+  
   vertical-align: middle;
+
 }
 
 .category {
