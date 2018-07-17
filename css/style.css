@@ -42,14 +42,14 @@ ul, ol{
 }
 .logo {
   text-transform: uppercase;
-  font-family: 'Raleway';
+  font-family: 'Poiret One', cursive;
   font-size: 30px;
-  color: black;
+  color: #818181;
   text-decoration: none;
 }
 .menu-item {
   text-transform: uppercase;
-  font-family: 'Raleway';
+  font-family: 'Poiret One', cursive;
   font-size: 14px;
 }
 
@@ -62,13 +62,13 @@ ul, ol{
 }
 
 .heading {
-  font-family: 'Playfair Display';
+  font-family: 'Poiret One', cursive;
   font-weight: 500;
-  color: #434343;
+  color: #818181;
 }
 
 .text {
-  font-family: 'Raleway';
+  font-family: 'Poiret One', cursive;
   color: #818181;
   line-height: 1.8;
 }
@@ -86,16 +86,16 @@ ul, ol{
   flex-wrap: wrap;
   justify-content: space-between;
 
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 3000px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .column {
-  /* position: relative */
-  max-width: 46%;
-  flex: 50%;
-  padding: 0 4px;
+
+  max-width: 100%;
+  flex: 25%;
+  padding: 0 10px;
 
 }
 .column-img {
@@ -104,7 +104,7 @@ ul, ol{
 }
 
 .category {
-  font-family: 'Raleway';
+  font-family: 'Poiret One', cursive;
   text-transform: uppercase;
   color: #aaaaaa;
   font-size: 12px;
