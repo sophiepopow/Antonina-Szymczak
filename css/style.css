@@ -67,7 +67,9 @@ ul, ol{
   font-family: 'Poiret One', cursive;
   font-size: 20px;
   color: #818181;
+  text-decoration: none;
   margin-left: 38%;
+
 }
 .image {
   width: 100%;
@@ -77,6 +79,7 @@ ul, ol{
   font-family: 'Poiret One', cursive;
   font-weight: 500;
   color: #818181;
+  text-decoration: none;
 }
 
 .text {
@@ -113,7 +116,7 @@ ul, ol{
 }
 .column-img {
   margin-top: 8px;
-  
+
   vertical-align: middle;
 
 }
@@ -124,6 +127,7 @@ ul, ol{
   color: #aaaaaa;
   font-size: 12px;
 }
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
@@ -137,5 +141,73 @@ ul, ol{
   .column {
     flex: 100%;
     max-width: 100%;
+  }
+}
+}
+
+.button{
+  background: none;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.footer{
+  border: 0px solid black;
+  background: #F0F0F0;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.footer-menu1{
+display: flex;
+justify-content: space-between;
+width: 1200px;
+padding: 0;
+margin:auto;
+}
+.footer-menu2{
+display: flex;
+width: 200px;
+justify-content: space-between;
+padding: 0;
+margin: auto;
+}
+.footer-link{
+  text-decoration: none;
+  color: black;
+  font-family: 'Poiret One', cursive;
+}
+.footer-icon{
+  width: 25px;
+  height: 25px;
+}
+
+@media (max-width: 650px){
+  .menu{
+    border: 3px solid red;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    background: white;
+    top: 0%;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: 0.5s;
+
+  }
+.footer{
+    flex-direction: column;
+
+  }
+  .footer-menu2{
+    margin-top: 40px;
+    align-items: center;
+  }
+  .menu-button{
+    display: block;
   }
 }
