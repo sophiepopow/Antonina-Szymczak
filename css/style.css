@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 ul, ol{
   list-style: none;
@@ -159,6 +160,9 @@ ul, ol{
   .column {
     flex: 50%;
     max-width: 50%;
+    align-items: center;
+    overflow-x: hidden;
+
   }
 }
 
@@ -167,6 +171,11 @@ ul, ol{
   .column {
     flex: 100%;
     max-width: 100%;
+    align-items: center;
+    overflow-x: hidden;
+
+
+
   }
 }
 }
@@ -232,7 +241,7 @@ margin: auto;
 
 @media (max-width: 650px){
   .menu{
-    border: 3px solid red;
+    border: 0px solid red;
     flex-direction: column;
     width: 100%;
     position: absolute;
@@ -252,12 +261,17 @@ margin: auto;
   .menu-open{
     transform: translateY(0);
   }
+  .column-img{
+    width: 100%;
+  }
+
 .footer{
     flex-direction: column;
-
+    width: 100%;
   }
   .footer-menu1{
     display: block;
+    margin: auto;
   }
   .footer-menu2{
     margin-top: 40px;
