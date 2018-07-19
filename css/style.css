@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 ul, ol{
   list-style: none;
@@ -179,6 +179,8 @@ ul, ol{
   }
 }
 }
+
+
 /* .column-img:after{
   content: "";
   position: absolute;
@@ -234,6 +236,7 @@ margin: auto;
   color: black;
   font-family: 'Poiret One', cursive;
 }
+
 .footer-icon{
   width: 25px;
   height: 25px;
@@ -280,4 +283,47 @@ margin: auto;
   .menu-button{
     display: block;
   }
+}
+
+
+/*================================================= ABOUT ME ==========================================*/
+
+.paragraph{
+  font-family: 'Poiret One', cursive;
+  color: #818181;
+  /* margin-top: 50px; */
+  margin-left: 20px;
+  margin-bottom: 84px;
+  margin-top: 40px;
+}
+.about-menu{
+display: column;
+align-content: space-around;
+width: 200px;
+padding: 0;
+margin-top: 1000px;
+margin: auto;
+}
+.about-link{
+  display: column;
+  align-content: space-around;
+  margin-left: 30px;
+  text-decoration: none;
+  color: #818181;
+  font-family: 'Poiret One', cursive;
+}
+.about-row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: -80px;
+
+}
+.credits{
+  text-decoration: none;
+  color: #818181;
+  font-family: 'Poiret One', cursive;
+  font-size: 10px;
+  margin-left: 25px;
+  margin-bottom: -10px;
 }
