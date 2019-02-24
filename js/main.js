@@ -1,4 +1,3 @@
-console.log("Js dziala!");
 
 // var button = document.getElementsByClassName('jsMenuButton');
 
