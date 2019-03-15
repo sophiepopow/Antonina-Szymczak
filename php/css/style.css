@@ -1,0 +1,330 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+ul, ol{
+  list-style: none;
+  padding: 0;
+}
+/* =========== HEADER =========== */
+.header {
+  max-width: 1000px;
+  margin: 100px auto 0 auto;
+}
+.navbar-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0px solid red;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.navbar {
+  background: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 5;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-family: 'Poiret One', cursive;
+  font-size: 30px;
+  color: #818181;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.menu {
+  padding: 0;
+  list-style: none;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item {
+  text-transform: uppercase;
+  font-family: 'Poiret One', cursive;
+  font-size: 14px;
+}
+
+.menu-link {
+  color: #818181;
+  text-decoration: none;
+}
+.menu-button{
+  border: 0px solid black;
+  background: none;
+  position: relative;
+  display: none;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+
+}
+.menu-button-item{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 3px;
+  background: black;
+}
+.menu-button-item:nth-child(2){
+  top:8px;
+}
+.image {
+  width: 100%;
+}
+.folder-link{
+  color: #818181;
+  text-decoration: none;
+}
+.folder-header{
+  margin-top: 110px;
+  text-transform: uppercase;
+  font-family: 'Poiret One', cursive;
+  font-size: 20px;
+  color: #818181;
+  text-decoration: none;
+  text-align: center;
+
+}
+.image {
+  width: 100%;
+}
+
+.heading {
+  font-family: 'Poiret One', cursive;
+  font-weight: 500;
+  color: #818181;
+  text-decoration: none;
+}
+
+.text {
+  font-family: 'Poiret One', cursive;
+  color: #818181;
+  line-height: 1.8;
+}
+
+.header-content {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 50px;
+}
+
+/* =========== ARTICLES =========== */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  /* max-width: 3000px;
+  margin-left: 10px;
+  margin-right: 10px; */
+}
+
+.column {
+
+  max-width: 100%;
+  flex: 25%;
+  padding: 0 10px;
+
+
+}
+.column-img {
+  margin-top: 8px;
+
+  vertical-align: middle;
+
+}
+
+.category {
+  font-family: 'Poiret One', cursive;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-size: 12px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+    align-items: center;
+    overflow-x: hidden;
+
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+    align-items: center;
+    overflow-x: hidden;
+
+  }
+}
+}
+
+
+/* .column-img:after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  left: 0;
+  background: black;
+  bottom: -1px;
+  right: 0px;
+  transition: 0.5s;
+}
+.column-img:hover::after{
+  width: 100%; */
+}
+.button{
+  background: none;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+/* =========== FOOTER =========== */
+
+.footer{
+  border: 0px solid black;
+  background: #F0F0F0;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  position:absolute;
+  left:0;
+  right:0;
+
+}
+.footer-menu1{
+display: flex;
+justify-content: center;
+width: 500px;
+padding: 0;
+margin-left: 100px;
+
+}
+.footer-menu2{
+display: flex;
+width: 200px;
+justify-content: space-between;
+padding: 0;
+margin: auto;
+}
+.footer-link{
+  text-decoration: none;
+  color: black;
+  font-family: 'Poiret One', cursive;
+}
+
+.footer-icon{
+  width: 25px;
+  height: 25px;
+}
+
+@media (max-width: 650px){
+  .menu{
+    border: 0px solid red;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    background: white;
+    top: 0%;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: 0.5s;
+
+  }
+  .menu-item{
+    margin-bottom: 30px;
+  }
+
+  .menu-open{
+    transform: translateY(0);
+  }
+  .column-img{
+    width: 100%;
+  }
+
+.footer{
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer-menu1{
+    display: block;
+    margin: auto;
+  }
+  .footer-menu2{
+    margin-top: 40px;
+    align-items: center;
+  }
+  .menu-button{
+    display: block;
+  }
+}
+
+
+/*================================================= ABOUT ME ==========================================*/
+
+.paragraph{
+  font-family: 'Poiret One', cursive;
+  color: #818181;
+  /* margin-top: 50px; */
+  margin-left: 20px;
+  margin-bottom: 84px;
+  margin-top: 40px;
+}
+.about-menu{
+display: column;
+align-content: space-around;
+width: 200px;
+padding: 0;
+margin-top: 1000px;
+margin: auto;
+}
+.about-link{
+  display: column;
+  align-content: space-around;
+  margin-left: 30px;
+  text-decoration: none;
+  color: #818181;
+  font-family: 'Poiret One', cursive;
+  margin-bottom: 50px;
+}
+.about-row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: -80px;
+
+}
+.credits{
+  text-decoration: none;
+  color: #818181;
+  font-family: 'Poiret One', cursive;
+  font-size: 10px;
+  margin-left: 25px;
+  margin-bottom: -10px;
+  margin-top: 50px;
+}
